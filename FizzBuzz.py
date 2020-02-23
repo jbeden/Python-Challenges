@@ -7,6 +7,6 @@ for i in range(100):
       print("Fizz", end="")
     if(x % 5 == 0):
       print("Buzz", end="")
+    print()
   else:
-    print(x, end="")
-  print()
+    print(x)
