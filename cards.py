@@ -44,6 +44,7 @@ class cards:
     print(self.deck)
 
   def getcard(self, check):
+    check = check % (self.decksize)
     card = (int)(check % (self.decksize / self.suits) + 1)
     suit = math.floor(check/(self.decksize / self.suits)) + 1
 
